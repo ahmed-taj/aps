@@ -5,6 +5,6 @@ const packageJson = require('./package.json')
 require('./commands')(cli)
 
 // Initilize CLI options
-cli.version(packageJson.version).usage('<command> [options]')
+cli.version(packageJson.version)
 
 module.exports = cli
