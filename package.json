@@ -9,6 +9,7 @@
     "aps-cli": "./bin/aps"
   },
   "scripts": {
+    "commitmsg": "validate-commit-msg",
     "format": "prettier-standard '**/*.js'",
     "gc": "git-cz",
     "lint": "eslint .",
