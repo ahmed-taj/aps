@@ -1,0 +1,52 @@
+{
+  "name": "aps-cli",
+  "version": "0.0.0-development",
+  "author": "Ahmed Tajelsir <ah.tajelsir@gmail.com>",
+  "description": "Awesome Package Scripts CLI",
+  "license": "MIT",
+  "bin": {
+    "aps": "./bin/aps",
+    "aps-cli": "./bin/aps"
+  },
+  "scripts": {
+    "format": "prettier-standard '**/*.js'",
+    "gc": "git-cz",
+    "lint": "eslint .",
+    "precommit": "npm test && npm run lint",
+    "test": "jest",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "url": "https://github.com/ahmed-taj/aps-cli.git"
+  },
+  "engines": {
+    "node": ">=6.11.0",
+    "npm": ">=3.10.10"
+  },
+  "devDependencies": {
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "husky": "^0.14.3",
+    "jest": "^20.0.4",
+    "prettier-standard": "^6.0.0",
+    "semantic-release": "^6.3.6",
+    "validate-commit-msg": "^2.12.2"
+  },
+  "jest": {
+    "coverageReporters": [
+      "html",
+      "json"
+    ],
+    "testEnvironment": "node"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
