@@ -1,6 +1,5 @@
 {
   "name": "aps-cli",
-  "preferGlobal": true,
   "version": "0.0.0-development",
   "author": "Ahmed Tajelsir <ah.tajelsir@gmail.com>",
   "description": "Awesome Package Scripts CLI",
@@ -19,7 +18,7 @@
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
-    "url": "https://github.com/ahmed-taj/aps-cli.git"
+    "url": "https://github.com/aps-js/aps"
   },
   "engines": {
     "node": ">=6.11.0",
@@ -53,6 +52,7 @@
   },
   "dependencies": {
     "chalk": "^2.0.1",
-    "commander": "^2.11.0"
+    "commander": "^2.11.0",
+    "inquirer": "^3.1.1"
   }
 }
