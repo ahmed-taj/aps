@@ -5,8 +5,7 @@
   "description": "Awesome Package Scripts CLI",
   "license": "MIT",
   "bin": {
-    "aps": "./bin/aps",
-    "aps-cli": "./bin/aps"
+    "aps": "./bin/aps"
   },
   "scripts": {
     "commitmsg": "validate-commit-msg",
