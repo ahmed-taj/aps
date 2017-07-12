@@ -52,7 +52,6 @@
   "dependencies": {
     "chalk": "^2.0.1",
     "commander": "^2.11.0",
-    "fs-extra": "^3.0.1",
     "inquirer": "^3.1.1",
     "validate-npm-package-name": "^3.0.0"
   }
